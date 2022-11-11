@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap')
+
+$bgc: #F2F2F2
+$almost-white: #FFFDFA
+$dark-space-blue: #00001A
+$gunmetal: #5E607A
+$light-vermillion: #F15D51
+$silver: #C5C6CE
+$yellow: #E9AA52               
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Inter', sans-serif
+    background-color: $bgc
+    color: $gunmetal
+    height: 100%
+
+    // Root
+.xl
+    font-size: 56px
+    line-height: 56px
+    font-weight: 800
+    color: $dark-space-blue
+.l
+    font-size: 40px
+    line-height: 40px
+    font-weight: 700
+    color: $yellow
+.m
+    font-size: 32px
+    line-height: 32px
+    font-weight: 700
+    color: $silver
+.s
+    font-size: 20px
+    line-height: 24px
+    font-weight: 800
+.xs
+    font-size: 18px
+    line-height: 24px
+    font-weight: 800
+    color: $dark-space-blue
+.body
+    font-size: 15px
+    line-height: 26px
+    font-weight: 400
+
+img
+    max-width: 100%    
+
+a
+    text-decoration: none    
+    cursor: pointer
+
+.main-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 90px
+    margin-bottom: 130px
+
+.container
+    max-width: 1110px
+    
+// header    
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+.menu-desktop
+    display: flex
+    justify-content: flex-end
+    a
+        margin-left: 40px
+        color: $gunmetal
+        &:hover
+            color: $light-vermillion
+    
+// mobile menu
+#openIcon,
+#menuMobile
+    display: none   
+
+// #overlay
+//     position: fixed
+//     display: none
+//     left: 0
+//     right: 0
+//     right: 0
+//     bottom: 0
+//     background: rgba(0, 0, 0, 0.9)
+
+    // Main news
+.main-news
+    margin: 55px auto 70px auto    
+    display: flex
+    width: 100%
+
+.featured-news
+    width: 740px    
+
+.main-text
+    display: flex
+    margin-top: 30px
+    h1
+        width: 370px
+    
+.body-news
+    width: 370px
+    margin-left: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .btn
+        max-width: 185px
+        padding: 13px 0px
+        text-align: center
+        color: $almost-white
+        font-size: 14px
+        text-transform: uppercase
+        letter-spacing: 4.38px
+        background-color: $light-vermillion
+        &:hover
+            background-color: $dark-space-blue
+// new
+.new
+    width: 370px
+    background-color: $dark-space-blue
+    margin-left: 30px
+    padding: 28px 24px
+    h4
+        color: $almost-white
+        margin-bottom: 8px
+        cursor: pointer
+        &:hover
+            color: $light-vermillion
+    p
+        color: $silver      
+    h2
+        margin-bottom: 34px           
+.divider
+    margin: 25px 0px    
+    width: 100%     
+
+// top 3 news
+.top-3
+    display: flex
+    justify-content: space-around
+.top-news
+    display: flex
+    height: 129px
+    img
+        margin-right: 24px
+    h6
+        margin: 12px 0px 9px 0px 
+        cursor: pointer
+        &:hover
+            color: $light-vermillion
+    p
+        max-width: 24ch          
+.new-3
+    margin-left: 45px         
+
+
+@media screen and (max-width: 1200px)    
+    .container
+        max-width: 700px
+    .main-news,
+    .main-text,
+    .top-3
+        display: flex
+        flex-direction: column
+
+    .menu-desktop
+        display: none
+    .main-wrapper
+        position: relative
+
+    #openIcon
+        display: block
+        
+    #closeIcon
+        position: absolute
+        right: 0%
+        margin: 27px 20px 0px 0px    
+
+    #menuMobile
+        display: none
+        position: fixed
+        background-color: $almost-white
+        top: 0
+        right: 0
+        width: 66vw
+        height: 100vh
+        transition: ease 0.5s
+        p
+            margin-bottom: 24px
+            color: $gunmetal
+            font-size: 18px
+            line-height: 24px
+            &:hover
+                color: $light-vermillion
+
+    .expand-menu        
+            margin: 144px 0px 0px 30px        
+    
+    .main-wrapper
+        margin: 50px 0px
+
+    // Main news
+    .featured-news
+        width: 100%    
+
+    .main-text
+        h1
+            font-size: 40px
+            width: 100%
+        p
+            width: 700px
+            margin: 16px 0px 24px 0px            
+    
+    .body-news
+        margin: 0px 0px 64px 0px
+    
+    .new
+        width: 100%
+        margin-left: 0px
+        padding: 30px 30px  
+        h2
+            font-size: 32px
+            line-height: 32px           
+    .divider
+        margin: 40px 0px         
+
+    .top-3
+        width: 100%
+    .top-news
+        height: 100%    
+        img
+            margin-right: 24px
+    .news-content
+        h3
+            font-size: 120px
+            line-height: 120px
+        h6
+            margin: 80px 0px 9px 0px
+        p
+            max-width: 100%                
+    .new-3
+        margin-left: 0px 
+        margin-top: 32px       
+
+
+@media screen and (max-width: 767px)    
+    .container
+        max-width: 343px
+    .expand-menu        
+        margin: 144px 0px 0px 24px   
+
+    .main-wrapper
+        margin: 28px 0px 80px 0px       
+    
+    .main-news
+        margin: 32px 0px 0px 0px
+
+    .main-text
+        margin-top: 24px
+        p
+            max-width: 343px
+
+    .new
+        padding: 24px 21px  
+        margin-bottom: 64px
+            
+    .divider
+        margin: 30px 0px         
+
+    .top-news img
+        height: 127px 
+        width: 100px    
+    .news-content
+        h3
+            font-size: 32px
+            line-height: 32px
+        h6
+            margin: 12px 0px 9px 0px

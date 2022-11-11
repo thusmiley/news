@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <meta property="og:title" content="News" />
+    <meta property="og:description" content="Developed by Thu" />
+    <meta property="og:image" content="./design/desktop-preview.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>News</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div id="overlay"></div>
+      <!-- Mobile menu -->
+
+      <div id="menuMobile" onclick="closeNav()">
+        
+        <a href="" id="closeIcon" onclick="closeNav()"><img src="./assets/images/icon-menu-close.svg" alt="close icon" ></a>
+        
+        <div class="expand-menu">
+          <a href="">
+            <p class="body">Home</p>
+          </a>
+          <a href="">
+            <p class="body">New</p>
+          </a>
+          <a href="">
+            <p class="body">Popular</p>
+          </a>
+          <a href="">
+            <p class="body">Trending</p>
+          </a>
+          <a href="">
+            <p class="body">Categories</p>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Header -->
+      <section class="header container">
+        <div class="logo">
+          <a href="">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        
+
+        <!-- Menu -->
+        <div class="menu">
+          <div class="menu-desktop">
+            <a href=""><p class="body">Home</p></a>
+            <a href=""><p class="body">New</p></a>
+            <a href=""><p class="body">Popular</p></a>
+            <a href=""><p class="body">Trending</p></a>
+            <a href=""><p class="body">Categories</p></a>
+          </div>
+
+        </div>
+<a href="" id="openIcon" onclick="openNav()"><img src="./assets/images/icon-menu.svg" alt="hamburger icon" /></a>
+      </section>
+
+      <!-- Main news -->
+      <section class="main-news container">
+
+        <!-- Featured -->
+        <div class="featured-news">
+        
+          <picture>
+          <source
+            media="(max-width: 767px"
+            srcset="./assets/images/image-web-3-mobile.jpg"
+          />
+        
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="web 3.0">
+        </picture>
+
+          <div class="main-text">
+            <h1 class="xl">The Bright Future of Web 3.0?</h1>
+            <div class="body-news">
+              <p class="body">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <a href="" class="btn">Read more</a>
+
+            </div>
+          </div>
+        </div>
+
+          <!-- New -->
+        <div class="new">
+          <!-- new-1 -->
+          <h2 class="l">New</h2>
+          <h4 class="s">Hydrogen VS Electric Cars</h4>
+          <p class="body">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <img src="./assets/images/divider.jpg" alt="divider" class="divider">
+          <!-- new-2 -->
+          <h4 class="s">The Downsides of AI Artistry</h4>
+          <p class="body">What are the possible adverse effects of on-demand AI image generation?</p>
+          <img src="./assets/images/divider.jpg" alt="divider" class="divider">
+          <!-- new-3 -->
+          <h4 class="s">Is VC Funding Drying Up?</p>
+            <p class="body">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </section>
+
+        <!-- Top 3 -->
+        <section class="top-3 container">
+          <!-- news 1 -->
+          <div class="top-news new-1">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="retro pcs">
+            <div class="news-content">
+              <h3 class="m">01</h3>
+              <h6 class="xs">Reviving Retro PCs</h6>
+              <p class="body">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <!-- news 2 -->
+          <div class="top-news new-2">
+            <img src="./assets/images/image-top-laptops.jpg" alt="top laptops">
+            <div class="news-content">
+              <h3 class="m">02</h3>
+              <h6 class="xs">Top 10 Laptops of 2022</h6>
+              <p class="body">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <!-- news 3 -->
+          <div class="top-news new-3">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth">
+            <div class="news-content">
+              <h3 class="m">03</h3>
+              <h6 class="xs">The Growth of Gaming</h6>
+              <p class="body">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </section>
+
+    </div>            
+
+    <script src="./script.js"></script>
+  </body>
+</html>
