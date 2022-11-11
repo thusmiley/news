@@ -120,6 +120,16 @@ a {
   display: none;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .main-news {
   margin: 55px auto 70px auto;
   display: -webkit-box;
@@ -339,6 +349,7 @@ a {
   .news-content p {
     max-width: 100%;
   }
+  .new-2,
   .new-3 {
     margin-left: 0px;
     margin-top: 32px;
